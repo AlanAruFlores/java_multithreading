@@ -1,0 +1,104 @@
+package ar.com.avion.interfaz;
+
+import java.util.Scanner;
+
+public class AvionMover {
+
+	static final int ANCHO =100;
+	static final int ALTO = 25;
+	static String[][] plataforma = new String[ALTO][ANCHO];
+	
+	static final int DEFAULT_POS_Y  = 12;
+	static final int DEFAULT_POS_X  = 50;
+
+	static Scanner entrada = new Scanner(System.in);
+	
+	public static void generarPlataforma() {
+		for(int i  = 0  ; i<ALTO; i++) {
+			for(int j = 0  ; j<ANCHO; j++) {
+				if( ( i == 0 || i == ALTO -1 ) || ((i!=0 && i!=ALTO-1) && (j==0 || j == ANCHO-1)))
+					plataforma[i][j] = "*";
+				else
+					plataforma[i][j] = " ";
+			}
+		}
+
+	}
+	
+	public static void generarAvion(int posInicialY, int posInicialX) {
+		
+		int count = 1;
+		//int posInicialY = 12;
+		//int posInicialX = 50;
+		
+		int k = 0 , j = 0 ;
+		int auxX  = 0;
+		while(k<3) {
+			
+			j=0;
+			auxX = posInicialX;
+			while(j < count) {
+				plataforma[posInicialY][auxX++] = "*";
+				j++;
+			}
+			
+			posInicialX--;
+			posInicialY++;
+			count+=2;
+			k++;
+		}
+		
+		
+	}
+	
+	public static void mostrarPlataforma() {
+		for ( int i = 0 ; i<ALTO; i++) {
+			for(int j  = 0 ; j<ANCHO; j++) {
+				System.out.print(plataforma[i][j]);
+			}
+			System.out.println();
+		}
+	}
+	
+	public static void mostrarTeclas() {
+		System.out.println("[W] ARRIBA | [A] DERECHA | [S] ABAJO | [D] IZQUIERDA | [X] SALIR" );
+	}
+	public static void hacerEspacios(int n ) {
+		for(int i = 0 ; i<n; i++) {
+			System.out.println();
+		}
+	}
+	
+	public static void main(String args[]) {	
+		generarPlataforma();
+		generarAvion(DEFAULT_POS_Y, DEFAULT_POS_X);
+		mostrarPlataforma();
+		mostrarTeclas();
+		
+		
+		String mov = "";
+		
+		int posX =DEFAULT_POS_X;
+		int posY = DEFAULT_POS_Y;
+		
+		while(true) {
+			hacerEspacios(10);
+			
+			mov  =  entrada.next();
+			if(mov.equalsIgnoreCase("w"))
+				posY--;
+			if(mov.equalsIgnoreCase("s"))
+				posY++;
+			if(mov.equalsIgnoreCase("a"))
+				posX++;
+			if(mov.equalsIgnoreCase("d"))
+				posX--;
+			
+			generarPlataforma();
+			generarAvion(posX, posY);
+			mostrarPlataforma();
+			mostrarTeclas();
+		}
+
+	}
+}

@@ -1,0 +1,15 @@
+package ar.com.interfaz;
+
+public class ClaseThreadGroup2 extends Thread{
+
+	public ClaseThreadGroup2(String nombre, ThreadGroup grupo) {
+		super(grupo, nombre);
+	}
+	
+	@Override
+	public void run() {
+		Thread.sleep(2000);
+		System.out.println("Ejercutando el Hilo "+ Thread.currentThread().getName());
+	}
+	
+}

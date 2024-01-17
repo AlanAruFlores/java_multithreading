@@ -1,0 +1,9 @@
+package ar.com.interfaz;
+
+public class ClaseThreadGroup2 extends Thread{
+
+	public void run() {
+		
+	}
+	
+}

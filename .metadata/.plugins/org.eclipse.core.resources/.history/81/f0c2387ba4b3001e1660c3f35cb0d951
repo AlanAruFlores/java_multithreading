@@ -1,0 +1,12 @@
+package ar.com.interfaz.clases.ejercicios.impresora;
+
+import java.util.Collection;
+
+public class Impresora implements Runnable{
+	
+	private Collection<Documento> cola;
+	
+	@Override
+	public void run() {
+	}
+}

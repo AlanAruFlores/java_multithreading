@@ -1,0 +1,65 @@
+package ar.com.interfaz;
+
+public class ClaseDeJoin implements Runnable{
+	
+	/*
+	 * Metodo que correra cada hilo
+	 * */
+	/*
+	@Override
+	public void run(){
+		String name = Thread.currentThread().getName();
+		
+		//Supongamos que el id de los 3 hilos son 14,15,16
+		long id = Thread.currentThread().getId();
+		
+		if(id == 15) // Lanzara una excepcion en el hilo cuyo id es 15, pero no afecta a las demas
+			throw new RuntimeException();
+		
+		
+		for(int i = 0 ; i<2; i++) {
+			try {
+				Thread.sleep(1000);
+				System.out.println("Soy el hilo "+name+ "cuyo id es : "+id);
+				System.out.println(i);
+			}catch(InterruptedException ex) {
+				System.out.println(ex);
+			}
+		}
+	}
+	
+	
+	public static void main(String [] args) {
+		
+		for(int i  = 0 ; i<3; i++) {
+			try {
+				Thread  t = new Thread(new ClaseDeJoin());
+				
+				t.start();
+				t.join();
+			}catch(InterruptedException ex) {
+				ex.printStackTrace();
+			}
+		}
+	
+		
+	}
+	*/
+	
+	
+	//Interrumpir un hilo
+	
+	Thread hiloQueVaAInterrumpir;
+	
+	@Override
+	public void run() {
+		
+		for(int)
+	}
+
+	
+	public static void main(String [] args) {
+		
+	
+	}
+}

@@ -1,0 +1,23 @@
+package ar.com.avion.interfaz.hilo;
+
+import ar.com.avion.interfaz.AvionMover;
+
+public class BalaThread extends Thread{
+
+	
+	int posX  = AvionMover.posX;
+	int posY = AvionMover.posY; // Mover esto
+	
+	
+	@Override
+	public void run() {
+		boolean ejecutar = true;
+		
+		while(ejecutar) {
+			posY-=2;
+			AvionMover.plataforma[posY][posX] = "+";
+			AvionMover.plataforma[posY+1][posX]=" ";
+			Thread.sleep(500);
+		}
+	}
+}

@@ -1,0 +1,21 @@
+package ar.com.interfaz;
+/*Crea una clase llamada Contador que contenga un atributo que sea un contador,
+otro que sea el nombre del hilo y otro que sea el limite del contador, es decir, donde debe acabar*/
+
+import ar.com.interfaz.clases.ejercicios.HiloContador;
+
+public class PracticaHilo3 {
+	public static void main(String[] args) {
+		
+		Thread hContador1 = new Thread(new HiloContador("H1", 150));
+		Thread hContador2 = new Thread(new HiloContador("H2", 200));
+		Thread hContador3 = new Thread(new HiloContador("H3", 160));
+		Thread hContador4 = new Thread(new HiloContador("H4", 240));
+
+		hContador1.start();
+		hContador2.start();
+		hContador3.start();
+		hContador4.start();
+		
+	}
+}

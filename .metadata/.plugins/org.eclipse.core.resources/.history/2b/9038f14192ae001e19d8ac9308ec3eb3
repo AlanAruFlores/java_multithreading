@@ -1,0 +1,11 @@
+package ar.com.interfaz;
+import java.lang.Thread;
+public class Main {
+	public static void Main() {
+		
+	}
+	
+	public static void VerEstadoHilo() {
+		System.out.println(Thread.);
+	}
+}

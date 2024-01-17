@@ -1,0 +1,7 @@
+package ar.com.interfaz;
+
+public class ClasePrioridades {
+	public static void main(String[] args) {
+		
+	}
+}

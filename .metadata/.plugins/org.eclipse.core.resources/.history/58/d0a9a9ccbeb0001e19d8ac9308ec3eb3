@@ -1,0 +1,32 @@
+package ar.com.interfaz.clases.ejercicios;
+
+
+/*
+ * Realizar un ejercicio donde se asignen cien numeros a una lista usando 3 hilos
+ * */
+public class ThreadPoolEjercicio2 implements Runnable{
+
+	static int numeros[] = new int[100];
+	static int index = 0;
+	static boolean continuar = true;
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+
+
+	@Override
+	public void run() {
+		while(continuar) {
+			
+		}
+	}
+	
+	public int tenerNumeroAleatorio() {
+		return (int) (Math.random()*100+1);
+	}
+	
+}

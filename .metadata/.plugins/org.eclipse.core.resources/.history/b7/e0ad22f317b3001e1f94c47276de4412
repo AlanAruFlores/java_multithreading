@@ -1,0 +1,19 @@
+package ar.com.interfaz;
+
+public class ClaseMultitask2 {
+
+	public static void main(String[] args) {
+		
+		//Imprimir los caracteres de la a-z
+		Thread t1 = new Thread() {
+			public void run() {
+				for(char aux = 'a' ; aux  <='z'; aux++) {
+					System.out.print(aux+" - ");
+				}
+				
+			}
+		};
+		
+		
+	}
+}

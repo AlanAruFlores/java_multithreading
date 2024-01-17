@@ -1,0 +1,17 @@
+package ar.com.interfaz.hilos;
+
+public class TrabajoThreadPool implements Runnable {
+	
+	public String mensaje;
+	
+	public TrabajoThreadPool(String mensaje) {
+		this.mensaje = mensaje;
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+
+
+}

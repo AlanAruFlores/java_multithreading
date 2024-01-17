@@ -1,0 +1,83 @@
+package ar.com.carrera.interfaz;
+
+import java.util.HashSet;
+
+import ar.com.carrera.dominio.Auto;
+import ar.com.carrera.dominio.AutomovilesLujo;
+import ar.com.carrera.dominio.Deportivo;
+import ar.com.carrera.dominio.DeportivoCompacto;
+
+public class Carrera extends Thread {
+	public static final Integer FILAS = 20;
+	public static final Integer COLUMNAS = 6;
+	public static String [][]plataforma = new String[FILAS][COLUMNAS];
+	
+	
+	public static Boolean continua = true;
+	
+	private static void generarPlataforma() {
+		for(int i = 0 ; i<FILAS;i++) {
+			for(int j  = 0; j<COLUMNAS; j++) {
+				if( (i == 0 || i == FILAS-1) || (j == 0 || j == COLUMNAS-1))
+					plataforma[i][j] = "*";
+		
+				else if( ( i == FILAS-2 && (j != 0 && j != COLUMNAS -1 )) ) 
+					plataforma[i][j] = "+";
+				else if ( ( i == 1 && (j != 0 && j != COLUMNAS -1 )))
+					plataforma[i][j] = "_";
+				else
+					plataforma[i][j] = " ";
+			}
+		}
+		
+		
+	}
+	
+	private static void mostrarPlataforma() {
+		hacerEspacios(10);
+		for(int i = 0 ; i<FILAS;i++) {
+			for(int j  = 0; j<COLUMNAS; j++) {
+				System.out.print(plataforma[i][j]+" ");
+			}
+			System.out.println("");
+		}
+	}
+	
+	private static void hacerEspacios(int n) {
+		for(int  i = 0 ; i<n;i++) {
+			System.out.println();
+		}
+	}
+	
+	
+	@Override 
+	public void run() {
+		while(continua) {
+			mostrarPlataforma();
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+	}
+	public static void main(String [] args) {
+		generarPlataforma();
+		
+		Thread tCarrera = new Carrera();
+		tCarrera.start();
+		
+		HashSet<Auto> participantes = new HashSet<>() {{
+			add(new Deportivo("Ferrari", "Blue label", 100, "ROJO"));
+			add(new AutomovilesLujo("Chevrolet", "Red Label", 80, "AZUL"));
+			add(new DeportivoCompacto("Casio", "Black Label", 20, "NEGRO"));
+			add(new AutomovilesLujo("KAZC", "Green Label", 80, "AZUL"));
+
+		}};
+		
+		
+		
+		
+	}
+}

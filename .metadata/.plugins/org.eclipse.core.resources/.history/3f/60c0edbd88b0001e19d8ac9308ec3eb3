@@ -1,0 +1,13 @@
+package ar.com.avion.interfaz.hilo;
+
+import ar.com.avion.interfaz.AvionMover;
+
+public class BalaThread extends Thread{
+
+	
+	int posX  = AvionMover
+	@Override
+	public void run() {
+		
+	}
+}

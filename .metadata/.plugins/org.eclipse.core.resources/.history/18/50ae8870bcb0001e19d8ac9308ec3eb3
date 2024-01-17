@@ -1,0 +1,9 @@
+package ar.com.interfaz.clases.ejercicios;
+/*
+ * Realizar un ejercicio donde se haga un threadpool de 10 hilos y se muestre la tabla de multiplicacion de los 10 numeros
+ * */
+
+
+public class ThreadPoolEjercicioI implements Runnable{
+
+}

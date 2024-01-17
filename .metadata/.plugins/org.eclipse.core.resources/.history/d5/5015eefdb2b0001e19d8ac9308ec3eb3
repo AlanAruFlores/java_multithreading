@@ -1,0 +1,7 @@
+package ar.com.interfaz;
+
+public class ClaseThreadPool {
+	public static void main(String[] args) {
+		
+	}
+}

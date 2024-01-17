@@ -1,0 +1,19 @@
+package ar.com.interfaz.clases.ejercicios.transferencia;
+
+public class HiloTransferencia implements Runnable{
+
+	private Transferencia transferencia;
+	
+	public HiloTransferencia(Transferencia t) {
+		this.transferencia = t;
+	}
+	
+	@Override
+	public void run() {
+		synchronized (this) {
+			CuentaBancaria emisor= transferencia.getEmisor();
+			transferencia.getReceptor().setSaldo(null);
+		}
+	}
+
+}

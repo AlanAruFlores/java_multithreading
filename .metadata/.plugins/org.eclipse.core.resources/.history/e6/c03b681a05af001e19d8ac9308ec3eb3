@@ -1,0 +1,11 @@
+package ar.com.interfaz;
+
+public class PracticaHiloI implements Runnable{
+
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	
+}

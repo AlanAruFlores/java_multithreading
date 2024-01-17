@@ -1,0 +1,13 @@
+package ar.com.interfaz.clases.ejercicios;
+
+public class HiloNumerosLetras implements new Runnable() {
+	private int tipoHilo;
+	
+	public HiloNumerosLetras(int tipo) {
+		this.tipoHilo = tipo
+	}
+	public void run() {
+		
+	}
+
+}

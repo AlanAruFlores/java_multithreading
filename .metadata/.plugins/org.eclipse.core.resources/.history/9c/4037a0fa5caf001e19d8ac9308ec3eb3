@@ -1,0 +1,22 @@
+package ar.com.interfaz.clases.ejercicios;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+import ar.com.dominio.Producto;
+
+/*Realizar un ejercicio donde si el tipo de hilo es:
+ * 1- Llenar datos de un ArrayList
+ * 2- Mostrar datos de un ArrayList*/
+public class HiloArrayClases implements Runnable{
+
+	static S<Producto> arrProductos = new ArrayList<>();
+	public static void main(String[] args) {
+		
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}

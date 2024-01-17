@@ -1,0 +1,17 @@
+package ar.com.interfaz.clases.ejercicios.impresora;
+
+public class Usuario {
+	private String mail;
+	private String contrasenia;
+	private String nombre;
+	
+	
+	public Usuario(String mail, String contrasenia, String nombre) {
+		super();
+		this.mail = mail;
+		this.contrasenia = contrasenia;
+		this.nombre = nombre;
+	}
+	
+	
+}

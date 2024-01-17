@@ -1,0 +1,8 @@
+package ar.com.interfaz.clases.ejercicios;
+
+public class HiloContador implements Runnable{
+	@Override
+	public void run() {
+		
+	}
+}

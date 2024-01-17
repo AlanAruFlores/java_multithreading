@@ -1,0 +1,5 @@
+package ar.com.interfaz.hilos;
+
+public class PrimerRunnable implements Runnable{
+
+}

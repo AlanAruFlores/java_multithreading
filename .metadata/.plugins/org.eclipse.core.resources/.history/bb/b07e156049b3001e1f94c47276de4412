@@ -1,0 +1,42 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+
+public class Evento {
+	
+	private String titulo;
+	private String descripcion;
+	public final Float PRECIO_ENTRADA = 14.4f;
+	public final Integer CANTIDAD_DISPONIBLE = 100;
+	
+	public Evento(String titulo, String descripcion) {
+		this.titulo = titulo;
+		this.descripcion = descripcion;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public Float getPRECIO_ENTRADA() {
+		return PRECIO_ENTRADA;
+	}
+
+	public Integer getCANTIDAD_DISPONIBLE() {
+		return CANTIDAD_DISPONIBLE;
+	}
+	
+	
+	
+	
+}

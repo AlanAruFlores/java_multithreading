@@ -1,0 +1,9 @@
+package ar.com.avion.interfaz.hilo;
+
+public class BalaThread extends Thread{
+
+	
+	public void run() {
+		
+	}
+}

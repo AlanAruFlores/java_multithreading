@@ -1,0 +1,8 @@
+package ar.com.interfaz.clases.ejercicios.impresora;
+
+public class Usuario {
+	private String mail;
+	private String contrasenia;
+	private String nombre;
+	
+}

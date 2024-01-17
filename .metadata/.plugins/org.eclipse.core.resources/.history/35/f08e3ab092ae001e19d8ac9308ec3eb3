@@ -1,0 +1,17 @@
+package ar.com.interfaz.hilos;
+
+public class ABC implements Runnable {
+
+	@Override
+	public void run() {
+		
+		try {
+			Thread.sleep(200);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		Thread.slee(300);
+	}
+
+}

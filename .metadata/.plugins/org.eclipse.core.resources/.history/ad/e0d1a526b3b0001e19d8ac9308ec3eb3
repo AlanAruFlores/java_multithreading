@@ -1,0 +1,9 @@
+package ar.com.interfaz.hilos;
+
+public class TrabajoThreadPool implements Runnable {
+	public void run() {
+		
+	}
+
+
+}

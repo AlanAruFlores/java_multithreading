@@ -1,0 +1,11 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+
+import java.time.LocalDate;
+
+public class Persona {
+	private String nombre;
+	private String apellido;
+	private Integer edad;
+	private final LocalDate fechaNacimiento;
+	
+}

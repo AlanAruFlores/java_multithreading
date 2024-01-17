@@ -1,0 +1,8 @@
+package ar.com.interfaz.hilos;
+
+public class Reloj implements Runnable{
+
+	@Override
+	public void run()}
+
+}

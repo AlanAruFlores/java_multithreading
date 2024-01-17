@@ -1,0 +1,17 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+
+public class Evento {
+	
+	private String titulo;
+	private String descripcion;
+	private final Float PRECIO_ENTRADA = 14.4f;
+	public final Integer CANTIDAD_DISPONIBLE = 100;
+	
+	public Evento(String titulo, String descripcion) {
+		this.titulo = titulo;
+		this.descripcion = descripcion;
+	}
+	
+	
+	
+}

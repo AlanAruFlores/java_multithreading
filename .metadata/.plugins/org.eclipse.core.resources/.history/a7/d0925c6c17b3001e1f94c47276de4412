@@ -1,0 +1,8 @@
+package ar.com.interfaz;
+
+
+/*Para que 2 hilos trabajen de manera distinta tenemos como primera forma
+ * definir 2 clases distintas que implementen de Runnable*/
+public class ClaseMultitask {
+
+}

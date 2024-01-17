@@ -1,0 +1,16 @@
+package ar.com.interfaz;
+
+
+public class EstadoHilo implements Runnable{
+	public static EstadoHilo h1;
+	
+	public static void main(String[] args) {
+		h1  = new EstadoHilo();
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+}

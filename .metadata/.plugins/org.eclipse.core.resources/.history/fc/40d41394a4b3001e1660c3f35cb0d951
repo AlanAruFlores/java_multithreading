@@ -1,0 +1,14 @@
+package ar.com.interfaz.clases.ejercicios.impresora;
+import java.util.Queue;
+
+public class Impresora implements Runnable{
+	
+	private Queue<Documento> cola;
+	
+	public Impresora(Collection<Documento> arr) {
+		cola.addAll(cola)
+	}
+	@Override
+	public void run() {
+	}
+}

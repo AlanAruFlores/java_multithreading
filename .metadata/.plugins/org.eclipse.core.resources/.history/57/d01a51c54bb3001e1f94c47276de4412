@@ -1,0 +1,28 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+/*
+ *Ejercicio: Simulación de un sistema de venta de entradas para un evento
+
+Supongamos que estás desarrollando un sistema de venta de entradas en línea para un evento popular. 
+Queremos simular la venta de entradas
+utilizando hilos para representar a los compradores que intentan adquirir entradas simultáneamente. 
+ * */
+
+
+public class EjercicioEvento {
+	public static Evento evento = new Evento("Evento de comida",
+			"Va a ver un gran buffet");
+	
+	
+	public static void main(String args[]) {
+		ExecutorService pool  = Executors.newFixedThreadPool(4);
+		
+		for(int i = 0 ; i<100; i++) {
+			
+		}
+	}
+	
+}

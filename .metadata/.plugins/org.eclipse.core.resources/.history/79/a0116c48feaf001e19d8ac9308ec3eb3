@@ -1,0 +1,9 @@
+package ar.com.interfaz;
+
+public class ClasePrioridades2 implements new Runnable() {
+	public void run() {
+		
+	}
+}{
+
+}

@@ -1,0 +1,10 @@
+package ar.com.interfaz.clases.ejercicios.impresora;
+/*
+ * Imagina que estás desarrollando un sistema para simular la impresión
+ *  de documentos en una impresora compartida.
+ *  Varios usuarios intentarán imprimir documentos de manera concurrente,
+ *  y queremos garantizar que la impresión sea segura y eficiente.
+ * */
+public class EjercicioImpresora {
+
+}

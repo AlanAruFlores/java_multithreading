@@ -1,0 +1,9 @@
+package ar.com.interfaz.clases.ejercicios;
+
+public class ThreadPoolEjercicio4 implements Runnable {
+	
+	@Override
+	public void run() {
+		
+	}
+}

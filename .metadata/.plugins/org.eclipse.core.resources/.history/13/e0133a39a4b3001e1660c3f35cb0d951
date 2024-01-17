@@ -1,0 +1,7 @@
+package ar.com.interfaz.clases.ejercicios.impresora;
+
+public class Impresora implements Runnable{
+	
+	public void run() {
+	}
+}

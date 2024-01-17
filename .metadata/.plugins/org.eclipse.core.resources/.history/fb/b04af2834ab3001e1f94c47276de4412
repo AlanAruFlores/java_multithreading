@@ -1,0 +1,11 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+
+import java.util.Date;
+
+public class Comprador extends Persona{
+
+	public Comprador(String nombre, String apellido, Integer edad, Date fechaNacimiento) {
+		super(nombre, apellido, edad, fechaNacimiento);
+	}
+
+}

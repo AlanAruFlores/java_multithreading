@@ -1,0 +1,24 @@
+package ar.com.interfaz;
+
+public class ClaseNombrarHilo extends Thread{
+
+	public ClaseNombrarHilo(String nombre) {
+		super(nombre);
+	}
+	
+	@Override 
+	public void run() {
+		String name = Thread.currentThread().getName();
+		System.out.println("Me llamo"+ name);
+	}
+	
+	public static void main(String[]args) {
+		String[] arrNombres = {"MiHilo", "SuperHilo","HiloHilo","UltimoHilo"};
+		
+		for(int i = 0 ; i<arrNombres.length; i++)
+			new ClaseNombrarHilo(arrNombres[i]).start();
+		
+		
+	}
+	
+}

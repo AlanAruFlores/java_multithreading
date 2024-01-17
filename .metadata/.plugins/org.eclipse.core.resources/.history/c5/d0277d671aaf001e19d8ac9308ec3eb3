@@ -1,0 +1,17 @@
+package ar.com.interfaz.hilos;
+
+public class Reloj implements Runnable{
+
+	private int segundos;
+	private int minutos;
+	private int horas;
+	
+	public Reloj() {
+		segundos = minutos = horas = 0;
+	}
+	@Override
+	public void run() {
+		
+	}
+
+}

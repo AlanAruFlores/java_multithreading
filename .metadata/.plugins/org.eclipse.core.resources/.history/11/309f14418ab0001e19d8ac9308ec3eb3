@@ -1,0 +1,9 @@
+package ar.com.avion.interfaz.hilo;
+
+public class MostrarThread extends Thread{
+
+	
+	public void run() {
+		
+	}
+}

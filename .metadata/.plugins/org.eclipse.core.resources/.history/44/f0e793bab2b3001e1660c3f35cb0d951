@@ -1,0 +1,49 @@
+package ar.com.interfaz.clases.ejercicios.botella;
+
+public class Botella implements Runnable{
+	
+	private final Integer ALTO = 6;
+	private final Integer ANCHO  = 4;
+	private String[][] botella = new String[ALTO][ANCHO];
+	
+	
+	
+	public Botella() {
+		construirBotella();
+	}
+	
+	private void construirBotella() {
+		for(int i = 0 ; i < ALTO; i++) {
+			for(int j = 0 ; j< ANCHO; j++) {
+				if(j == 0 || j == ANCHO-1)
+					botella[i][j] = "|";
+				else if(i == ALTO-1 && (j != 0 && j != ANCHO-1))
+					botella[i][j] = "_";
+				else
+					botella[i][j] = " ";
+			}
+			
+		}
+		
+	}
+	
+	private void mostrarBotella() {
+		for(int i = 0 ; i<ALTO; i++) {
+			for(int j = 0 ; j<ANCHO; j++) {
+				System.out.print(botella[i][j]);
+			}
+			System.out.println();
+		}
+	}
+	
+	private void hacerEspacios(int n) {
+		for(var k = 0 ; k<n; k++) {
+			System.out.println();
+		}
+	}
+	@Override
+	public void run() {
+		hacerEspacios(2);
+		mostrarBotella();
+	}
+}

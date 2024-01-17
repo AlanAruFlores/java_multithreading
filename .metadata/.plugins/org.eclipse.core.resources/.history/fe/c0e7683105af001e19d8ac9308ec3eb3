@@ -1,0 +1,17 @@
+package ar.com.interfaz;
+
+public class PracticaHiloI implements Runnable{
+
+	//Llenar un arreglo usando hilos y mostrarlos en pantalla
+	public static void main(String[] args) {
+		
+	}
+	
+	@Override
+	public void run() {
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,7 @@
+package ar.com.interfaz;
+
+public class PracticaHilo2 {
+	public static void main(String[] args) {
+		
+	}
+}

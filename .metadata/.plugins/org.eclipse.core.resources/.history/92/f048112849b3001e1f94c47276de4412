@@ -1,0 +1,13 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+
+public class Evento {
+	
+	public String titulo;
+	public String descripcion
+	public final Integer CANTIDAD_DISPONIBLE = 100;
+	
+	public Evento() {
+		
+	}
+	
+}

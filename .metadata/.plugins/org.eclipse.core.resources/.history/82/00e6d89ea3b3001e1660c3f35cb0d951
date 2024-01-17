@@ -1,0 +1,7 @@
+package ar.com.interfaz.clases.ejercicios.impresora;
+
+public final class Documento {
+	private String titulo;
+	private String contenido;
+	
+}

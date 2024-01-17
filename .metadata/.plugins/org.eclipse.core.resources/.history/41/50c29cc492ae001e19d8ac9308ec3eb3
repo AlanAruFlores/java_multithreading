@@ -1,0 +1,5 @@
+package ar.com.interfaz;
+
+
+public class EstadoHilo implements Runnable{
+}

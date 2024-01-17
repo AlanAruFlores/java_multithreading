@@ -1,0 +1,22 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+
+import java.util.Date;
+
+public class Persona {
+	private String nombre;
+	private String apellido;
+	private Integer edad;
+	private final Date fechaNacimiento;
+	
+	public Persona(String nombre, String apellido, Integer edad, Date fechaNacimiento) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.edad = edad;
+		this.fechaNacimiento = fechaNacimiento;
+	}
+	
+	
+	
+	
+}

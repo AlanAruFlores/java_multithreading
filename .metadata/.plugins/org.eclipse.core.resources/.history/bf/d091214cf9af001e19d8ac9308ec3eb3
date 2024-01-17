@@ -1,0 +1,8 @@
+package ar.com.interfaz;
+
+public class ClaseNombrarHilo extends Thread{
+
+	public ClaseNombrarHilo(String nombre) {
+		
+	}
+}

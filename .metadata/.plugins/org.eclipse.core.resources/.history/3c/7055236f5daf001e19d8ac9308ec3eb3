@@ -1,0 +1,37 @@
+package ar.com.interfaz.clases.ejercicios;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import ar.com.dominio.Producto;
+
+/*Realizar un ejercicio donde si el tipo de hilo es:
+ * 1- Llenar datos de un ArrayList
+ * 2- Mostrar datos de un ArrayList*/
+public class HiloArrayClases implements Runnable{
+
+	private int tipoHilo;
+	static Set<Producto> arrProductos = new HashSet<Producto>();
+	
+	public HiloArrayClases(int tipoHilo) {
+		this.tipoHilo = tipoHilo;
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+	@Override
+	public void run() {
+		switch(tipoHilo) {
+			case 1: 
+			case 2:
+		}
+	}
+	
+	public void agregarProductosAlSet() {
+		arrProductos.addAll(new HashSet<Producto>(){
+			new Producto(1,"Pan",400.0f, 200),
+			
+		});
+	}
+}

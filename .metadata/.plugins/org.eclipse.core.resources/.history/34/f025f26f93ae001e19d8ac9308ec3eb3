@@ -1,0 +1,26 @@
+package ar.com.interfaz;
+
+import ar.com.interfaz.hilos.ABC;
+
+public class EstadoHilo implements Runnable{
+	public static EstadoHilo e1;
+	public static Thread h1;
+	
+	public static void main(String[] args) {
+		e1  = new EstadoHilo();
+		h1  = new Thread(e1);
+		
+		System.out.println("Estado inicial del hilo 1: "+ h1.getState());
+		h1.start();
+	}
+
+	@Override
+	public void run() {
+		ABC obj = new ABC();
+		Thread h2 = new Thread(obj);
+		
+		
+		h2.start();
+		System.out.println("Estado del hilo 2 a ejecutarse  : "+h2.getState());
+	}
+}

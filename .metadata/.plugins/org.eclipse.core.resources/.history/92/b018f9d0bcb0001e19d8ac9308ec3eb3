@@ -1,0 +1,22 @@
+package ar.com.interfaz.clases.ejercicios;
+/*
+ * Realizar un ejercicio donde se haga un threadpool de 10 hilos y se muestre la tabla de multiplicacion de los 10 numeros
+ * */
+
+
+public class ThreadPoolEjercicioI implements Runnable{
+
+	private int numero;
+	
+	public ThreadPoolEjercicioI(int numero) {
+		this.numero = numero;
+	}
+	@Override
+	public void run() {
+		System.out.println(Thread.currentThread().getName()+" muestra la tabla del numero "+this.numero);
+		for(int i = 0 ; i<=10; i++) 
+			System.out.println(this.numero+" X "+i+" = "+(this.numero*i));
+		
+	}
+
+}

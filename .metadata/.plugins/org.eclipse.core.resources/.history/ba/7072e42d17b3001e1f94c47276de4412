@@ -1,0 +1,10 @@
+package ar.com.interfaz;
+
+public class ClaseMultitaskImpar implements Runnable{
+
+	
+	@Override
+	public void run() {
+		
+	}
+}

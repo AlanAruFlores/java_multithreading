@@ -1,0 +1,47 @@
+package ar.com.carrera.hilos;
+
+import ar.com.carrera.dominio.Auto;
+import ar.com.carrera.dominio.AutomovilElectrico;
+import ar.com.carrera.dominio.AutomovilesLujo;
+import ar.com.carrera.dominio.Deportivo;
+import ar.com.carrera.dominio.DeportivoCompacto;
+import ar.com.carrera.interfaz.Carrera;
+
+public class AvanzarHilo implements Runnable{
+
+	private Auto auto;
+	private Integer prioridad;
+	private int posX;
+	private int posY;
+	
+	public AvanzarHilo(Auto auto, int postX, int postY) {
+		this.auto = auto;
+		this.posX  = postX;
+		this.posY = postY;
+		
+		agregarPrioridad();
+	}
+	
+	private void agregarPrioridad() {	
+		if(auto instanceof Deportivo)
+			this.prioridad = 4;
+		else if(auto instanceof AutomovilesLujo)
+			this.prioridad =  3;
+		else if(auto instanceof AutomovilElectrico)
+			this.prioridad = 2;
+		else if(auto instanceof DeportivoCompacto)
+			this.prioridad = 1;
+		
+	}
+	
+	@Override
+	public void run() {
+		boolean sigue = true;
+		while(sigue) {
+			Carrera.plataforma[++posY][posX] = "*";
+			Carrera.plataforma[--posY][posX]  =" ";
+			
+ 		}
+	}
+
+}

@@ -1,0 +1,9 @@
+package ar.com.interfaz.clases.ejercicios.transferencia;
+
+public class Transferencia {
+	private CuentaBancaria emisor;
+	private CuentaBancaria receptor;
+	private Double saldoTransferido;
+	
+	
+}

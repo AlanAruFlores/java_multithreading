@@ -1,0 +1,16 @@
+package ar.com.interfaz;
+
+import ar.com.interfaz.hilos.PrimerHilo;
+
+public class CrearHilo {
+	
+	public static void main(String[] args) {
+		
+		//1ra forma de crear un hilo
+		PrimerHilo h1 = new PrimerHilo();
+		
+		h1.start();
+		System.out.println(h1.isAlive()); // verifico se esta vivo
+
+	}
+}

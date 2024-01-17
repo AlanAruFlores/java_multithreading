@@ -1,0 +1,20 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+
+public class HiloComprar implements Runnable{
+
+	private Comprador comprador ;
+	
+	
+	public HiloComprar(Comprador comprador) {
+		super();
+		this.comprador = comprador;
+	}
+
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

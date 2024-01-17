@@ -1,0 +1,41 @@
+package ar.com.carrera.hilos;
+
+import ar.com.carrera.dominio.Auto;
+import ar.com.carrera.interfaz.Carrera;
+
+public class AvanzarHilo implements Runnable{
+
+	private Auto auto;
+	private int posX;
+	private int posY;
+	
+	public AvanzarHilo(Auto auto, int postX, int postY) {
+		this.auto = auto;
+		this.posX  = postX;
+		this.posY = postY;
+	}
+	
+	
+	@Override
+	public void run() {
+		boolean sigue = true;
+		while(sigue) {
+			
+			if(posY <= 1) {
+				sigue = false;
+				break;
+			}
+			
+			posY--;
+			Carrera.plataforma[posY][posX] = "+";
+			Carrera.plataforma[posY+1][posX]  =" ";
+			
+			try {
+				Thread.sleep((10000 / Thread.currentThread().getPriority()));
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+ 		}
+	}
+
+}

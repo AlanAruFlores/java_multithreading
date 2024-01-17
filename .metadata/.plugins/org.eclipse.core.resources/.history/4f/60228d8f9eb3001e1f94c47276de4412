@@ -1,0 +1,23 @@
+package ar.com.interfaz.clases.ejercicios.transferencia;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+/*
+ * Supongamos que estás desarrollando un sistema bancario 
+ * y necesitas simular transferencias entre cuentas concurrentes.
+ *  Cada cuenta bancaria tiene un saldo inicial
+ *  y las transferencias deben ser seguras en un entorno multihilo.
+ * */
+public class EjercicioTransferencia {
+
+	static Collection<CuentaBancaria> arrCbus  =new ArrayList<>();
+	
+	public static void main(String[] args) {
+		Runnable rData = new Runnable() {
+			public void run() {
+				
+			}
+		};
+	}
+}

@@ -1,0 +1,30 @@
+package ar.com.interfaz.clases.ejercicios;
+
+import ar.com.utils.TipoParImpar;
+
+public class ThreadPoolEjercicio4 implements Runnable {
+	private TipoParImpar tipoHilo;
+	
+	public ThreadPoolEjercicio4(TipoParImpar tipoHilo) {
+		this.tipoHilo = tipoHilo;
+	}
+	
+	@Override
+	public void run() {
+		int indexInicio = 0;
+		switch(tipoHilo) {
+			case PAR:
+				indexInicio = 0;
+				Thread.currentThread().setName("HILO "+tipoHilo.name());
+				break;
+			case IMPAR:
+				indexInicio = 1;
+				break;
+		}
+		
+		for(var i =  indexInicio ; i < 20; i++) {
+			System.out.println("El");
+		}
+		
+	}
+}

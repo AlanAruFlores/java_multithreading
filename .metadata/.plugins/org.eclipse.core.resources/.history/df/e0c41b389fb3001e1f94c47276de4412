@@ -1,0 +1,14 @@
+package ar.com.interfaz.clases.ejercicios.transferencia;
+
+public class HiloTransferencia implements Runnable{
+
+	private Transferencia transferencia;
+	public HiloTransferencia(Transferencia t) {
+		
+	}
+	@Override
+	public void run() {
+		
+	}
+
+}

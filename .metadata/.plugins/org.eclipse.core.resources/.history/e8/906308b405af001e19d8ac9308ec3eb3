@@ -1,0 +1,42 @@
+package ar.com.interfaz;
+
+public class PracticaHiloI implements Runnable{
+
+	static int[] arr = new int [10];
+	static int n = 0;
+	
+	//Llenar un arreglo usando hilos y mostrarlos en pantalla
+	public static void main(String[] args) {
+		Runnable obj = new PracticaHiloI();
+		
+		Thread h1 = new Thread(obj, "Hilo 1");
+		Thread h2 = new Thread(obj, "Hilo 2");
+		
+		h1.start();
+		h2.start();
+		
+		try {
+			h1.join();
+			h2.join();
+			
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	@Override
+	public void run() {
+		int i = 0;
+		while(i<5) {
+			arr[n] = 10 * (n+1);
+			n++;
+			i++;
+		}
+	}
+	
+	
+	
+}

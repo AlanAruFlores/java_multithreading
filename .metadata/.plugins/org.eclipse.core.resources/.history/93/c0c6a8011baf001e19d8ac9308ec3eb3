@@ -1,0 +1,9 @@
+package ar.com.interfaz.clases.ejercicios;
+
+public class HiloReloj {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

@@ -1,0 +1,13 @@
+package ar.com.interfaz;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ClaseThreadPool {
+	
+	public static void main(String[] args) {
+		ExecutorService threadPool = Executors.newFixedThreadPool(4);
+		
+		
+	}
+}

@@ -1,0 +1,12 @@
+package ar.com.interfaz;
+
+public class ClaseThreadGroup2 extends Thread{
+
+	public ClaseThreadGroup2(String nombre, ThreadGroup grupo)
+	
+	@Override
+	public void run() {
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+package ar.com.interfaz.clases.ejercicios.evento;
+/*
+ *Ejercicio: Simulación de un sistema de venta de entradas para un evento
+
+Supongamos que estás desarrollando un sistema de venta de entradas en línea para un evento popular. 
+Queremos simular la venta de entradas
+utilizando hilos para representar a los compradores que intentan adquirir entradas simultáneamente. 
+ * */
+
+
+public class EjercicioEvento {
+	static Evento evento = new Evento()
+	public static void main(String args[]) {
+		
+	}
+	
+}

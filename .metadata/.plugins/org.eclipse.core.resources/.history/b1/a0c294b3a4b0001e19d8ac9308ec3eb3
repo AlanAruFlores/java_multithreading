@@ -1,0 +1,24 @@
+package ar.com.interfaz;
+
+public class ClaseDaemonThread implements Runnable{
+
+	@Override
+	public void run() {
+		if(Thread.currentThread().isDaemon()) {
+			while(true) {
+				System.out.println("Recopilando datos...");
+			}
+		}
+		else {
+			Thread.sleep(2000);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Thread tDaemon  = new Thread(new ClaseDaemonThread());
+		tDaemon.setDaemon(true);
+		
+		Thread tNoDaemon = new Thread()
+	}
+	
+}

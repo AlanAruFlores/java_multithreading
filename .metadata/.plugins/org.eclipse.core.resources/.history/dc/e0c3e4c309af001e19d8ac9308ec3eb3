@@ -1,0 +1,15 @@
+package ar.com.interfaz.clases.ejercicios;
+
+public class HiloContador implements Runnable{
+	private String nombre;
+	private int limite;
+	private int contador = 0;
+	
+	
+	@Override
+	public void run() {
+		for(contador = 0; contador < limite; contador++) {
+			
+		}
+	}
+}

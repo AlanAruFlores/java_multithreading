@@ -1,0 +1,10 @@
+package ar.com.interfaz.hilos;
+
+public class ABC implements Runnable {
+
+	@Override
+	public void run() {
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package ar.com.interfaz.clases.ejercicios.impresora;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+/*
+ * Imagina que estás desarrollando un sistema para simular la impresión
+ *  de documentos en una impresora compartida.
+ *  Varios usuarios intentarán imprimir documentos de manera concurrente,
+ *  y queremos garantizar que la impresión sea segura y eficiente.
+ * */
+public class EjercicioImpresora {
+	static Collection <Usuario> usuarios = new ArrayList<Usuario>() {
+		
+	}
+	static Collection<Documento> docs = new ArrayList<Documento>();
+	
+}

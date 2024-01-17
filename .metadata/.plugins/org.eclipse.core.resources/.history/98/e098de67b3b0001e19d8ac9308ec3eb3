@@ -1,0 +1,26 @@
+package ar.com.interfaz.hilos;
+
+public class TrabajoThreadPool implements Runnable {
+	
+	public String mensaje;
+	
+	public TrabajoThreadPool(String mensaje) {
+		this.mensaje = mensaje;
+	}
+	
+	@Override
+	public void run() {
+		String nombreDelHilo =Thread.currentThread().getName();
+		System.out.println(nombreDelHilo+"(Start) -> "+this.mensaje);
+	}
+	
+	public void procesarMensaje() {
+		try {
+			
+		}catch(InterruptedException ex) {
+			
+		}
+	}
+
+
+}

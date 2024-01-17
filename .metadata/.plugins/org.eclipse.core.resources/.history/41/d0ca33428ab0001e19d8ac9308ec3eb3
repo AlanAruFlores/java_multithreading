@@ -1,0 +1,10 @@
+package ar.com.avion.interfaz.hilo;
+
+public class MostrarThread extends Thread{
+
+	
+	@Override
+	public void run() {
+		
+	}
+}

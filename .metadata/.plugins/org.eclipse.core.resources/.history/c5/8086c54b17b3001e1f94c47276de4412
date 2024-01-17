@@ -1,0 +1,16 @@
+package ar.com.interfaz;
+
+public class ClaseMultitaskImpar implements Runnable{
+
+	
+	//Imprimir numeros impares
+	@Override
+	public void run() {
+		int cont = 0;
+		while(cont<20) {
+			if(cont % 2 != 0)
+				System.out.print(i+"-");
+			cont++;
+		}
+	}
+}

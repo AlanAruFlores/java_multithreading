@@ -1,0 +1,28 @@
+package ar.com.interfaz;
+
+public class ClaseThreadGroup2 extends Thread{
+
+	public ClaseThreadGroup2(String nombre, ThreadGroup grupo) {
+		super(grupo, nombre);
+	}
+	
+	@Override
+	public void run() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}finally {
+			System.out.println("Ejercutando el Hilo "+ Thread.currentThread().getName());
+		}
+	}
+	
+	public static void main(String[] args) {
+		ThreadGroup tg = new ThreadGroup("Grupo D");
+		ClaseThreadGroup2 t1 = new ClaseThreadGroup2(" Thread A ", tg);
+		ClaseThreadGroup2 t2 = new ClaseThreadGroup2(" Thread B ", tg);
+
+		
+	}
+	
+}

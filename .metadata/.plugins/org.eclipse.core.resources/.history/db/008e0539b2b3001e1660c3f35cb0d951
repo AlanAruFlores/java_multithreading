@@ -1,0 +1,8 @@
+package ar.com.interfaz.clases.ejercicios.botella;
+/*
+ * Hacer un ejercicio donde se haga una carrera de que botella
+ * se llena mas que otra
+ * */
+public class EjercicioBotella {
+
+}

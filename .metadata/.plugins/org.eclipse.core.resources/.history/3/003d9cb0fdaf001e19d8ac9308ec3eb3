@@ -1,0 +1,20 @@
+package ar.com.interfaz;
+
+public class ClasePrioridades {
+	
+	public static void main(String[] args) {
+		
+		Thread hiloPrincipal = Thread.currentThread();
+		System.out.println("PRIORIDAD DEL HILO: "+hiloPrincipal.getPriority());
+		
+		hiloPrincipal.setPriority(7);
+		System.out.println("PRIORIDAD DEL HILO: "+hiloPrincipal.getPriority());
+
+		hiloPrincipal.setPriority(Thread.MAX_PRIORITY);
+		System.out.println("PRIORIDAD DEL HILO: "+hiloPrincipal.getPriority());
+		
+		hiloPrincipal.setPriority(14);
+		System.out.println("PRIORIDAD DEL HILO: "+hiloPrincipal.getPriority());
+	}
+	
+}

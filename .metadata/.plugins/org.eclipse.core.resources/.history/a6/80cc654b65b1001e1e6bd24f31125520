@@ -1,0 +1,9 @@
+package ar.com.interfaz;
+
+public class ClaseThreadGroup implements Runnable{
+
+	@Override
+	public void run() {
+		
+	}
+}

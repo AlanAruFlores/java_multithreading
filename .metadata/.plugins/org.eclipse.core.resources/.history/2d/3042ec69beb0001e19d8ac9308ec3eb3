@@ -1,0 +1,15 @@
+package ar.com.interfaz.clases.ejercicios;
+
+
+/*
+ * Realizar un ejercicio donde se asignen cien numeros a una lista usando 3 hilos
+ * */
+public class ThreadPoolEjercicio2 {
+
+	int numeros[100] = new int[100];
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

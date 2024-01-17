@@ -1,0 +1,11 @@
+package ar.com.interfaz;
+
+import ar.com.interfaz.clases.ejercicios.HiloNumerosLetras;
+
+public class PracticaHilo2 {
+	public static void main(String[] args) {
+		HiloNumerosLetras obj = new HiloNumerosLetras(1);
+		Thread hNumero = new Thread(obj);
+		
+	}
+}

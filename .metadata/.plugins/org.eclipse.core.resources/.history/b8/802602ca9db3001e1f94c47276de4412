@@ -1,0 +1,10 @@
+package ar.com.interfaz.clases.ejercicios.transferencia;
+
+public final class CuentaBancaria {
+	private Integer id;
+	private String titular;
+	private String alias;
+	private Double saldo;
+	
+	
+}
